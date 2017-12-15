@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#ifdef __cplusplus
+#import <opencv2/opencv.hpp>
+#import <opencv2/highgui/ios.h>
+#endif
 
-@interface ViewController : UIViewController
-
-
+@interface ViewController : UIViewController<CvVideoCameraDelegate>
 @end
 
